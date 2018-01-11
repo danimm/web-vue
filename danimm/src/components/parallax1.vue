@@ -1,0 +1,38 @@
+<template lang="pug">
+  #index-banner.parallax-container.paralax1.valign-wrapper
+    .section.no-pad-bot
+      .container
+        .row
+          h1.header.center-align.white-text {{ name }}
+        .row
+          h5.header.center-align.col.s12.light {{ occupation }}
+        .row.center-align
+          a#aboutME.btn-large.waves-effect.waves-light.blue.darken-2(href="#") Conóceme un poco más
+</template>
+
+<script>
+export default {
+  data () {
+    return {
+      name: 'Daniel Muñoz Martín',
+      occupation: 'Frontend Web Developer',
+      url: '../assets/images/background.min.jpg'
+    }
+  }
+}
+</script>
+
+<style lang="css">
+  .parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+  width: 100%;
+  background-image: url(../assets/images/background.min.jpg);
+  background-position: 50% 50%;
+  }
+  .paralax1 {
+    min-height: 100vh;
+  }
+</style>
