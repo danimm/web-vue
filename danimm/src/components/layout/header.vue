@@ -4,21 +4,21 @@
       a(id="logo-container", class="brand-logo white-text scrollspy" href="#") DaniMM
       ul.right.hide-on-med-and-down
         li
-          a.white-text(href="#") Inicio
+          router-link(to="/", class="white-text") Inicio
         li
-          a.white-text(href="#") Acerca de mí
+          router-link(to="about", class="white-text") Acerca de mi
         li
-          a.white-text(href="#") Habilidades
+          router-link(to="description", class="white-text") Descripción
         li
           a.white-text(href="#") Portafolio
 
       ul(id="nav", class="side-nav blue darken-2")
         li
-          a.white-text(href="#") Inicio
+          router-link(to="/", class="white-text") Inicio
         li
-          a.white-text(href="#") Acerca de mí
+          router-link(to="about", class="white-text") Acerca de mi
         li
-          a.white-text(href="#") Habilidades
+          router-link(to="description", class="white-text") Descripción
         li
           a.white-text(href="#") Portafolio
       a(href="#", data-activates="nav-mobile", class="button-collapse white-text")
@@ -33,4 +33,7 @@ export default {
 </script>
 
 <style lang="css">
+  img{
+    max-width: 40px;
+  }
 </style>

@@ -15,8 +15,7 @@ export default {
   data () {
     return {
       name: 'Daniel Muñoz Martín',
-      occupation: 'Frontend Web Developer',
-      url: '../assets/images/background.min.jpg'
+      occupation: 'Frontend Web Developer'
     }
   }
 }
@@ -31,8 +30,9 @@ export default {
   width: 100%;
   background-image: url(../assets/images/background.min.jpg);
   background-position: 50% 50%;
-  }
-  .paralax1 {
-    min-height: 100vh;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
   }
 </style>

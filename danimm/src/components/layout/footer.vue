@@ -11,11 +11,11 @@
           h5.white-text
           ul.collection.links-footer
             li.collection-item.blue.darken-2
-              a.white-text(href="#") Inicio
+              router-link(to="/", class="white-text") Inicio
             li.collection-item.blue.darken-2
-              a.white-text(href="#") Acerca de mi
+              router-link(to="about", class="white-text") Acerca de mi
             li.collection-item.blue.darken-2
-              a.white-text(href="#") Habilidades
+              router-link(to="description", class="white-text") Descripción
             li.collection-item.blue.darken-2
               a.white-text(href="#") Portafolio
     .footer-copyright

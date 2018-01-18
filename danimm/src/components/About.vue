@@ -25,6 +25,9 @@ export default {
 </script>
 
 <style lang="css">
+  p {
+  line-height: 2rem;
+  }
   .aboutME{
     margin-bottom: 20px;
     margin-top: 60px;
