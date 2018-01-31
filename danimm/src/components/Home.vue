@@ -14,3 +14,8 @@ export default {
   components: { DmParallax }
 }
 </script>
+
+<style lang="stylus">
+  main
+    flex 1 0 auto
+</style>

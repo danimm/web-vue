@@ -19,3 +19,7 @@ export default {
   components: { DmHeader, DmFooter }
 }
 </script>
+
+<style lang="stylus">
+  @import "css/main.styl"
+</style>

@@ -14,7 +14,22 @@
     <script src="/dist/build.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="src/js/materialize.min.js"></script>
-    <!-- <script src="src/js/init.js"></script>
-    <script src="src/js/app.js"></script> -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".dropdown-button").dropdown();
+        $('.scrollspy').scrollSpy({
+          scrollOffset: 0
+        });
+
+        $(".button-collapse").sideNav();
+
+        $('.button-collapse').sideNav({
+          menuWidth: 200, // Default is 300
+          edge: 'left', // Choose the horizontal origin
+          closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+          draggable: true, // Choose whether you can drag to open on touch screens,
+        });
+      });
+    </script>
   </body>
 </html>

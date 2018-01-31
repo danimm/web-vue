@@ -1,5 +1,5 @@
 <template lang="pug">
-  #index-banner.parallax-container.paralax1.valign-wrapper
+  #index-banner.parallax-container.valign-wrapper
     .section.no-pad-bot
       .container
         .row
@@ -7,7 +7,7 @@
         .row
           h5.header.center-align.col.s12.light {{ occupation }}
         .row.center-align
-          a#aboutME.btn-large.waves-effect.waves-light.blue.darken-2(href="#") Conóceme un poco más
+          router-link.btn-large.waves-effect.waves-light.blue.darken-2(to="about", class="white-text") Conóceme un poco más
 </template>
 
 <script>
@@ -23,7 +23,6 @@ export default {
 
 <style lang="css">
   .parallax-container {
-  min-height: 380px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);

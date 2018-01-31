@@ -1,20 +1,21 @@
 <template lang="pug">
-  .container
+  .container.description
     .section
       .row
-        .col.s12.m4
+        .col.s12.m6
           .icon-block
             h2.center.brown-text
               i.material-icons.blue-text code
             h5.center Frontend
             p.light {{ msg }}
-        .col.s12.m4
+        .col.s12.m6
           .icon-block
             h2.center.brown-text
               i.material-icons.blue-text devices
             h5.center Responsive Design
             p.light {{ msg2 }}
-        .col.s12.m4
+      .row
+        .col.s12
           .icon-block
             h2.center.brown-text
               i.material-icons.blue-text laptop
