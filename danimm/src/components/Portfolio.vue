@@ -6,8 +6,8 @@
         p {{ msg }}
         p {{ msg2 }}
     .row
-      .col.s12.m6.l4(v-for="p in proyectos")
-        .card.sticky-action
+      .col.s12.m6.l6(v-for="p in proyectos")
+        .card.sticky-action.small
           .card-image.waves-effect.waves-block-waves-light
             img.activator(:src="p.src")
           .card-content
@@ -29,9 +29,34 @@ export default {
       msg: 'En este apartado se encuentra un listado de mis proyectos personales, utilizados para poner en práctica las nuevas tecnologías que voy aprendiendo.',
       msg2: 'Iré añadiendo todos los proyectos que vaya desarrollando en este apartado de la web.',
       proyectos: [
-        { title: 'Proyecto 1', description: 'Esto es un ejemplo', src: 'src/assets/images/daniel.jpg', url: 'http://vue-local-storage.surge.sh', go: 'Ir al proyecto' },
-        { title: 'API Last.fm', description: 'En este proyecto mostramos un pequeño listado de artistas consumiendo la API de last fm.', src: 'src/assets/images/vuebasic.png', url: 'http://vue-basic.surge.sh', go: 'Ir al proyecto' },
-        { title: 'Manipulando el DOM', description: 'Este es un pequeño proyecto para manipular el DOM usando el Local Storage del navegador.', src: 'src/assets/images/vuelocalstorage.png', url: 'http://vue-local-storage.surge.sh', go: 'Ir al proyecto' }
+        {
+          title: 'Vue Music',
+          description: 'Proyecto final del curso de Vue.js en Platzi.com, en el cual utilizamos la API de Spotify para hacer un reproductor de música online.',
+          src: 'src/assets/images/projects/vuemusic.png',
+          url: 'http://vue-music.now.sh',
+          go: 'Ir al proyecto'
+        },
+        {
+          title: 'API Last.fm',
+          description: 'En este proyecto mostramos un pequeño listado de artistas consumiendo la API de last fm.',
+          src: 'src/assets/images/projects/vuebasic.png',
+          url: 'http://vue-basic.surge.sh',
+          go: 'Ir al proyecto'
+        },
+        {
+          title: 'Manipulando el DOM',
+          description: 'Este es un pequeño proyecto CRUD para manipular el DOM usando el Local Storage del navegador.',
+          src: 'src/assets/images/projects/vuelocalstorage.png',
+          url: 'http://vue-local-storage.surge.sh',
+          go: 'Ir al proyecto'
+        },
+        {
+          title: 'Vue memory',
+          description: 'En este proyecto hacemos un juego de simon dice utilizando solamente Javascript.',
+          src: 'src/assets/images/projects/vuememory.png',
+          url: 'http://vue-memory.surge.sh',
+          go: 'Ir al proyecto'
+        }
       ]
     }
   }
