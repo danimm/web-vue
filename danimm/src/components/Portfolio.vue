@@ -56,6 +56,13 @@ export default {
           src: 'src/assets/images/projects/vuememory.png',
           url: 'http://vue-memory.surge.sh',
           go: 'Ir al proyecto'
+        },
+        {
+          title: 'Bootstrap-simple',
+          description: 'Un proyecto sencillo solamente utilizando el sistema de columnas de bootstrap y las clases más importantes.',
+          src: 'src/assets/images/projects/bootstrap-simple.png',
+          url: 'http://bootstrap-simple.surge.sh',
+          go: 'Ir al proyecto'
         }
       ]
     }

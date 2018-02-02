@@ -16,7 +16,7 @@
           li.collection-item.blue.darken-2
             router-link(to="portfolio", class="white-text") Portafolio
           li.collection-item.blue.darken-2
-            a.white-text(href="#") Portafolio
+            router-link(to="skills", class="white-text") Habilidades
     .footer-copyright
       .container.center-align Creada por {{ name }}
 

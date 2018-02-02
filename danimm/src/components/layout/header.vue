@@ -10,6 +10,8 @@
         li
           router-link(to="portfolio" class="white-text") Portafolio
         li
+          router-link(to="skills" class="white-text") Habilidades
+        li
           a.dropdown-button(data-activates="dropdown1") Idioma
             i.material-icons.right arrow_drop_down
       ul#dropdown1.dropdown-content
@@ -28,6 +30,8 @@
           router-link.white-text(to="about") Acerca de mi
         li
           router-link.white-text(to="description") Portafolio
+        li
+          router-link(to="skills" class="white-text") Habilidades
         li
           a.dropdown-button(data-activates="dropdown2") Idioma
             i.material-icons.right arrow_drop_down
