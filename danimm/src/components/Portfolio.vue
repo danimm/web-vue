@@ -1,6 +1,6 @@
 <template lang="pug">
   .container.portfolio
-    h1.center-align Portafolio personal
+    h1.center-align Personal Portfolio
     .row
       .col.s7.push-s3.center-align
         p {{ msg }}
@@ -11,7 +11,7 @@
           .card-image.waves-effect.waves-block-waves-light
             img.activator(:src="p.src")
           .card-content
-            span.card-title.center-align {{ p.title }}
+            span.card-title.center-align Description here!
           .card-action
             a.link(:href="p.url" target="_blank") {{ p.go }}
           .card-reveal
@@ -26,43 +26,43 @@ export default {
   name: 'portfolio',
   data () {
     return {
-      msg: 'En este apartado se encuentra un listado de mis proyectos personales, utilizados para poner en práctica las nuevas tecnologías que voy aprendiendo.',
-      msg2: 'Iré añadiendo todos los proyectos que vaya desarrollando en este apartado de la web.',
+      msg: 'In this section you will find a list of my personal projects, used to put into practice the new technologies that I am learning.',
+      msg2: 'I add periodically in this section the personal projects that I am developing.',
       proyectos: [
         {
           title: 'Vue Music',
-          description: 'Proyecto final del curso de Vue.js en Platzi.com, en el cual utilizamos la API de Spotify para hacer un reproductor de música online.',
+          description: 'Final project of the Vue.js course in Platzi.com, in which we use the Spotify API to make an online music player.',
           src: 'src/assets/images/projects/vuemusic.png',
           url: 'http://vue-music.now.sh',
-          go: 'Ir al proyecto'
+          go: 'Go to de project!'
         },
         {
           title: 'API Last.fm',
-          description: 'En este proyecto mostramos un pequeño listado de artistas consumiendo la API de last fm.',
+          description: 'In this simple project to show a small list of artists using the last fm API.',
           src: 'src/assets/images/projects/vuebasic.png',
           url: 'http://vue-basic.surge.sh',
-          go: 'Ir al proyecto'
+          go: 'Go to de project!'
         },
         {
           title: 'Manipulando el DOM',
-          description: 'Este es un pequeño proyecto CRUD para manipular el DOM usando el Local Storage del navegador.',
+          description: 'This is a project using the local storage to create a list of tasks.',
           src: 'src/assets/images/projects/vuelocalstorage.png',
           url: 'http://vue-local-storage.surge.sh',
-          go: 'Ir al proyecto'
+          go: 'Go to de project!'
         },
         {
           title: 'Vue memory',
-          description: 'En este proyecto hacemos un juego de simon dice utilizando solamente Javascript.',
+          description: 'This project is a game to memorize letters using only Javascript. Only for desktop.',
           src: 'src/assets/images/projects/vuememory.png',
           url: 'http://vue-memory.surge.sh',
-          go: 'Ir al proyecto'
+          go: 'Go to de project!'
         },
         {
           title: 'Bootstrap-simple',
-          description: 'Un proyecto sencillo solamente utilizando el sistema de columnas de bootstrap y las clases más importantes.',
+          description: 'A simple project only using the system of bootstrap columns and the most important classes.',
           src: 'src/assets/images/projects/bootstrap-simple.png',
           url: 'http://bootstrap-simple.surge.sh',
-          go: 'Ir al proyecto'
+          go: 'Go to de project!'
         }
       ]
     }

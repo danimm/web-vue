@@ -1,9 +1,9 @@
 <template lang="pug">
-  div
+  div(v-if="ready")
     .row.valign-wrapper(v-for="d in devtools")
       .col.s10.offset-s1
         span.black-text {{ d.name }}
-        span.right.black-text {{ d.progress }}
+        span.right.black-text {{ d.progress }} %
         .progress.blue-grey.lighten-5
           .determinate.blue.darken-2(role="progressbar" :class="d.id")
 </template>
@@ -16,8 +16,12 @@ export default {
       devtools: [
         { id: 'devtol1', name: 'Git/Github', progress: 80 },
         { id: 'devtol2', name: 'Webpack', progress: 70 }
-      ]
+      ],
+      ready: false
     }
+  },
+  mounted () {
+    this.ready = true
   }
 }
 </script>

@@ -1,16 +1,16 @@
 <template lang="pug">
   .container.aboutME.scrollspy
     .section
-      h4.center-align Acerca de mi
+      h4.center-align About me
       .row
         .col.s12.m6
           .image-container
             img.imagen.circle.responsive-img(src="../assets/images/daniel.jpg", alt="Imagen Daniel")
         .col.s12.m6
-          p.left-align.light {{ data1 }}
-      .row
-        .col.s12.m10.push-m1
-          p.left-align.light {{ data2 }}
+          p.left-align.light {{ msg1 }}
+          p.left-align.light {{ msg2 }}
+          p.left-align.light {{ msg3 }}
+            router-link(to="portfolio") personal Portfolio
       dm-description
 </template>
 
@@ -20,8 +20,9 @@ import DmDescription from './Description.vue'
 export default {
   data () {
     return {
-      data1: 'Me encanta todo lo relacionado con la tecnología desde que tengo uso de memoria. Soy técnico Superior en Administracion de Sistemas, pero ultimamente estoy dirigiendo mi carrera al mundo del desarrollo Web. Me encanta crear contenido y aprender todas las nuevas tecnologías que van apareciendo en la industria.',
-      data2: 'Decidí crear esta web donde poder plasmar todos mis conocimientos y poder tener mi propio Portafolio personal donde podrás ver tanto los proyectos personales que voy realizando, como ejercicios o prácticas de los nuevos Frameworks que voy descrubiendo.'
+      msg1: 'I am passionate about technology. I am a technician in Systems Administration, but the last years I am directing my career to the Web development.',
+      msg2: 'I love learning the new technologies of modern web development and creating personal projects to put my knowledge into practice.',
+      msg3: 'You can find all my personal projects in '
     }
   },
 

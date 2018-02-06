@@ -7,7 +7,7 @@
         .row
           h5.header.center-align.col.s12.light {{ occupation }}
         .row.center-align
-          router-link.btn-large.waves-effect.waves-light.blue.darken-2(to="about", class="white-text") Conóceme un poco más
+          router-link.btn-large.waves-effect.waves-light.blue.darken-2(to="about", class="white-text") About me
 </template>
 
 <script>

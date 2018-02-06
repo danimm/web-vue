@@ -19,17 +19,18 @@
           .icon-block
             h2.center.brown-text
               i.material-icons.blue-text laptop
-            h5.center 100% Autodidacta
+            h5.center 100% autodidact
             p.light {{ msg3 }}
+              a(href="https://platzi.com/@Danimm/" target="_blank") here.
 </template>
 
 <script>
 export default {
   data () {
     return {
-      msg: 'Especializándome en el Desarrollo de Páginas Web utilizando los estándares Web actuales y siempre al tanto de nuevos frameworks front-end que se utilizan en el desarrollo web moderno.',
-      msg2: 'Siempre buscando la mejor experiencia de usuario utilizando diseños adaptables. Los elementos se ajustan a la perfección sin importar el dispositivo o la resolución.',
-      msg3: 'Estudio constante y de manera diaria para estar actualizado a las últimas tendencias que se están usando en el desarrollo Web moderno actual.'
+      msg: "I'm specializing in Frontend Web Development, with the current Web standards and always looking for new front-end frameworks to add to my development stack.",
+      msg2: "Always looking for the best user experience using responsive designs, with frameworks like Bootstrap, Materialize-css (used in this website), Foundation... It doesn't matter the device or the resolution, you will always have a good user experience.",
+      msg3: "In the world of web development, you have to learn constantly! That's why I study daily to be always updated with the new frameworks and libraries. One of my favorite places to study is in Platzi. It is an online education platform with more than 500,000 students. You can check my profile "
     }
   }
 }
