@@ -34,35 +34,35 @@ export default {
           description: 'Final project of the Vue.js course in Platzi.com, in which we use the Spotify API to make an online music player.',
           src: 'src/assets/images/projects/vuemusic.png',
           url: 'http://vue-music.now.sh',
-          go: 'Go to de project!'
+          go: 'Go to the project!'
         },
         {
           title: 'API Last.fm',
           description: 'In this simple project to show a small list of artists using the last fm API.',
           src: 'src/assets/images/projects/vuebasic.png',
           url: 'http://vue-basic.surge.sh',
-          go: 'Go to de project!'
+          go: 'Go to the project!'
         },
         {
           title: 'Manipulando el DOM',
           description: 'This is a project using the local storage to create a list of tasks.',
           src: 'src/assets/images/projects/vuelocalstorage.png',
           url: 'http://vue-local-storage.surge.sh',
-          go: 'Go to de project!'
+          go: 'Go to the project!'
         },
         {
           title: 'Vue memory',
           description: 'This project is a game to memorize letters using only Javascript. Only for desktop.',
           src: 'src/assets/images/projects/vuememory.png',
           url: 'http://vue-memory.surge.sh',
-          go: 'Go to de project!'
+          go: 'Go to the project!'
         },
         {
           title: 'Bootstrap-simple',
           description: 'A simple project only using the system of bootstrap columns and the most important classes.',
           src: 'src/assets/images/projects/bootstrap-simple.png',
           url: 'http://bootstrap-simple.surge.sh',
-          go: 'Go to de project!'
+          go: 'Go to the project!'
         }
       ]
     }
