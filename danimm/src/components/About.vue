@@ -1,16 +1,16 @@
 <template lang="pug">
   .container.aboutME.scrollspy
     .section
-      h4.center-align About me
+      h4.center-align {{ $t('about')}}
       .row
         .col.s12.m6
           .image-container
             img.imagen.circle.responsive-img(src="../assets/images/daniel.jpg", alt="Imagen Daniel")
         .col.s12.m6
-          p.left-align.light {{ msg1 }}
-          p.left-align.light {{ msg2 }}
-          p.left-align.light {{ msg3 }}
-            router-link(to="portfolio") personal Portfolio
+          p.left-align.light {{ $t('aboutComp.msg1') }}
+          p.left-align.light {{ $t('aboutComp.msg2') }}
+          p.left-align.light {{ $t('aboutComp.msg3') }}
+            router-link(to="portfolio") {{ $t('aboutComp.portfolio')}}
       dm-description
 </template>
 

@@ -3,11 +3,11 @@
     .section.no-pad-bot
       .container
         .row
-          h1.header.center-align.white-text {{ name }}
+          h1.header.center-align.white-text {{ $t('name') }}
         .row
-          h5.header.center-align.col.s12.light {{ occupation }}
+          h5.header.center-align.col.s12.light {{ $t('occupation') }}
         .row.center-align
-          router-link.btn-large.waves-effect.waves-light.blue.darken-2(to="about", class="white-text") About me
+          router-link.btn-large.waves-effect.waves-light.blue.darken-2(to="about", class="white-text") {{ $t('about')}}
 </template>
 
 <script>

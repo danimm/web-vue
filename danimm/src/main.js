@@ -3,6 +3,7 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 
 import routes from '@/routes'
+import i18n from '@/i18n'
 
 Vue.use(VueRouter)
 
@@ -14,5 +15,6 @@ const router = new VueRouter({
 new Vue({
   el: '#app',
   render: h => h(App),
-  router
+  router,
+  i18n
 })

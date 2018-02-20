@@ -2,23 +2,23 @@
   footer#footer.page-footer.blue.darken-2
     .row
       .col.m5.s12.push-m2
-        h5.white-text Thank you for your visit!
-        p.grey-text.text-lighten-4 {{ msg }}
-        p {{ msg2 }}
+        h5.white-text {{ $t('footer.title') }}
+        p.grey-text.text-lighten-4 {{ $t('footer.msg1') }}
+        p {{ $t('footer.msg2') }}
           a.yellow-text(:href="`mailto:${mail}`") {{ mail }}
       .col.m3.s12.push-m2
         h5.white-text
         ul.collection.links-footer
           li.collection-item.blue.darken-2
-            router-link(to="/", class="white-text") Home
+            router-link(to="/", class="white-text") {{ $t('home')}}
           li.collection-item.blue.darken-2
-            router-link(to="about", class="white-text") About me
+            router-link(to="about", class="white-text") {{ $t('about')}}
           li.collection-item.blue.darken-2
-            router-link(to="portfolio", class="white-text") Portfolio
+            router-link(to="portfolio", class="white-text") {{ $t('portfolio')}}
           li.collection-item.blue.darken-2
-            router-link(to="skills", class="white-text") Skills
+            router-link(to="skills", class="white-text") {{ $t('skills')}}
     .footer-copyright
-      .container.center-align Created by {{ name }}
+      .container.center-align {{ $t('footer.created')}} Daniel Muñoz Martín
 
 </template>
 
