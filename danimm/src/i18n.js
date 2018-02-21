@@ -7,7 +7,7 @@ const messages = {
   es: {
     name: 'Daniel Muñoz Martín',
     occupation: 'Desarrollador Frontend',
-    language: 'Idiomas',
+    language: 'Idiomas: ',
     home: 'Inicio',
     about: 'Acerca de mi',
     portfolio: 'Portafolio',
@@ -87,7 +87,7 @@ const messages = {
   en: {
     name: 'Daniel Muñoz Martín',
     occupation: 'Desarrollador Frontend',
-    language: 'Languages',
+    language: 'Languages: ',
     home: 'Home',
     about: 'About me',
     portfolio: 'Portfolio',
@@ -103,6 +103,16 @@ const messages = {
       msg2: 'I love learning the new technologies of modern web development and creating personal projects to put my knowledge into practice.',
       msg3: 'You can find all my personal projects in ',
       portfolio: 'personal Portfolio'
+    },
+    skillsComp: {
+      title: 'Frontend Skills',
+      msg: 'These are my knowledge in the main technologies of modern web development.',
+      techs: {
+        dev: 'Development',
+        devtools: 'DevTools',
+        design: 'Design',
+        js: 'Javascript'
+      }
     },
     descriptionComp: {
       item1: {
@@ -129,37 +139,27 @@ const messages = {
         {
           id: 1,
           title: 'Vue Music',
-          description: 'Final project of the Vue.js course in Platzi.com, in which we use the Spotify API to make an online music player.',
-          src: 'src/assets/images/projects/vuemusic.png',
-          url: 'http://vue-music.now.sh'
+          description: 'Final project of the Vue.js course in Platzi.com, in which we use the Spotify API to make an online music player.'
         },
         {
           id: 2,
           title: 'API Last.fm',
-          description: 'In this simple project to show a small list of artists using the last fm API.',
-          src: 'src/assets/images/projects/vuebasic.png',
-          url: 'http://vue-basic.surge.sh'
+          description: 'In this simple project to show a small list of artists using the last fm API.'
         },
         {
           id: 3,
           title: 'Manipulate DOM',
-          description: 'This is a project using the local storage to create a list of tasks.',
-          src: 'src/assets/images/projects/vuelocalstorage.png',
-          url: 'http://vue-local-storage.surge.sh'
+          description: 'This is a project using the local storage to create a list of tasks.'
         },
         {
           id: 4,
           title: 'Memory game',
-          description: 'This project is a game to memorize letters using only Javascript. Only for desktop.',
-          src: 'src/assets/images/projects/vuememory.png',
-          url: 'http://vue-memory.surge.sh'
+          description: 'This project is a game to memorize letters using only Javascript. Only for desktop.'
         },
         {
           id: 5,
           title: 'Web Bootstrap',
-          description: 'A simple project only using the system of bootstrap columns and the most important classes.',
-          src: 'src/assets/images/projects/bootstrap-simple.png',
-          url: 'http://bootstrap-simple.surge.sh'
+          description: 'A simple project only using the system of bootstrap columns and the most important classes.'
         }
       ]
     }

@@ -23,21 +23,34 @@
           router-link(to="about" class="white-text") {{ $t('about')}}
         li
           router-link(to="portfolio" class="white-text") {{ $t('portfolio')}}
-        li
+        li.language
           router-link(to="skills" class="white-text") {{ $t('skills')}}
-        li
-          a.dropdown-button(href="#!" data-activates="dropdown1") {{ $t('language')}}
-            i.material-icons.right arrow_drop_down
+        li.collection-item.blue.darken-2 {{ $t('language')}}
+          a.link(@click="selectLang('es')")
+            .img-containerSp
+              img.flag(:src="spain")
+          a.link(@click="selectLang('en')")
+            .img-containerEn
+              img.flag(:src="england")
 
-      ul#nav-mobile.side-nav.blue.darken-2
+      ul#nav-mobile.side-nav.blue.darken-2.center-align
         li
           router-link.white-text(to="/") {{ $t('home')}}
         li
           router-link.white-text(to="about") {{ $t('about')}}
         li
           router-link.white-text(to="portfolio") {{ $t('portfolio')}}
-        li
+        li.language
           router-link(to="skills" class="white-text") {{ $t('skills')}}
+        li {{ $t('language')}}
+          a.link(@click="selectLang('es')")
+            .img-containerSpMobile
+              img.flag(:src="spain")
+        li
+          a.link(@click="selectLang('en')")
+            .img-containerEnMobile
+              img.flag(:src="england")
+
       a.button-collapse.white-text(data-activates="nav-mobile")
         i.material-icons menu
 
@@ -63,15 +76,22 @@ export default {
 </script>
 
 <style lang="css" scoped>
-  .img-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
+  .img-containerSp {
+    position: absolute;
+    right: -40px;
+    top: 7px;
   }
-  .language {
+  .img-containerEn {
+    position: absolute;
+    right: -80px;
+    top: 7px;
+  }
+  .flag {
     width: 26px;
     height: 26px;
+  }
+  .language {
+    position: relative;
   }
 
   ul.dropdown-content a {

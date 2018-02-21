@@ -4,26 +4,26 @@
       .col.s10.push-s1.m12
         .card.hovereable
           .card-content.center-align
-            h3.thin Frontend Skills
-            p {{ msg1 }}
+            h3.thin {{ $t('skillsComp.title')}}
+            p {{ $t('skillsComp.msg')}}
           .card-tabs
             ul.tabs.tabs-fixed-width
-              li.tab {{ techs[0].name }}
+              li.tab {{ $t('skillsComp.techs.dev') }}
           .card-content
             Skilldev
           .card-tabs
             ul.tabs.tabs-fixed-width
-              li.tab {{ techs[1].name }}
+              li.tab {{ $t('skillsComp.techs.devtools') }}
           .card-content
             Skilldevtool
           .card-tabs
             ul.tabs.tabs-fixed-width
-              li.tab {{ techs[2].name }}
+              li.tab {{ $t('skillsComp.techs.design') }}
           .card-content
             SkillDesign
           .card-tabs
             ul.tabs.tabs-fixed-width
-              li.tab {{ techs[3].name }}
+              li.tab {{ $t('skillsComp.techs.js') }}
           .card-content
             Skilljs
 
@@ -41,7 +41,6 @@ import SkillDesign from '@/components/skills/Design.vue'
 export default {
   data () {
     return {
-      msg1: 'These are my knowledge in the main technologies of modern web development',
       techs: [
         { name: 'Development' },
         { name: 'DevTools' },

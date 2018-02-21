@@ -1,5 +1,5 @@
 <template lang="pug">
-  div(v-if="ready")
+  div
     .row.valign-wrapper(v-for="j in javascripts")
       .col.s10.offset-s1
         span.black-text {{ j.name }}
@@ -14,14 +14,10 @@ export default {
   data () {
     return {
       javascripts: [
-        { id: 'js1', name: 'VueJS', progress: 60 },
-        { id: 'js2', name: 'Javascript', progress: 55 }
-      ],
-      ready: false
+        { id: 'js1', name: 'Vue JS', progress: 60 },
+        { id: 'js2', name: 'Vanilla JS', progress: 55 }
+      ]
     }
-  },
-  mounted () {
-    this.ready = true
   }
 }
 </script>

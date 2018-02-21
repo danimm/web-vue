@@ -17,8 +17,15 @@
             router-link(to="portfolio", class="white-text") {{ $t('portfolio')}}
           li.collection-item.blue.darken-2
             router-link(to="skills", class="white-text") {{ $t('skills')}}
+          li.collection-item.blue.darken-2.language {{ $t('language')}}
+            a.link(@click="selectLang('es')")
+              .img-containerSp
+                img.flag(:src="spain")
+            a.link(@click="selectLang('en')")
+              .img-containerEn
+                img.flag(:src="england")
     .footer-copyright
-      .container.center-align {{ $t('footer.created')}} Daniel Muñoz Martín
+      .container.center-align {{ $t('footer.created')}} {{ $t('name')}}
 
 </template>
 
@@ -26,10 +33,15 @@
 export default {
   data () {
     return {
-      msg: 'The purpose of this website is to have all my personal projects and knowledge in one place.',
-      msg2: 'If you have any questions write me to: ',
-      mail: 'info@danimm.com',
-      name: 'Daniel Muñoz Martín'
+      england: 'src/assets/images/england.svg',
+      spain: 'src/assets/images/spain.svg',
+      german: 'src/assets/images/german.svg'
+    }
+  },
+
+  methods: {
+    selectLang (lang) {
+      this.$i18n.locale = lang
     }
   }
 }
@@ -41,5 +53,22 @@ export default {
   }
   li.collection{
     border-bottom: none;
+  }
+  .img-containerSp {
+    position: absolute;
+    left: 102px;
+    top: 7px;
+  }
+  .img-containerEn {
+    position: absolute;
+    left: 142px;
+    top: 7px;
+  }
+  .flag {
+    width: 26px;
+    height: 26px;
+  }
+  .language {
+    position: relative;
   }
 </style>

@@ -1,5 +1,5 @@
 <template lang="pug">
-  div(v-if="ready")
+  div
     .row.valign-wrapper(v-for="d in devtools")
       .col.s10.offset-s1
         span.black-text {{ d.name }}
@@ -10,18 +10,14 @@
 
 <script>
 export default {
-  name: 'Skilldevtool',
+  name: 'skilldevtool',
   data () {
     return {
       devtools: [
         { id: 'devtol1', name: 'Git/Github', progress: 80 },
         { id: 'devtol2', name: 'Webpack', progress: 70 }
-      ],
-      ready: false
+      ]
     }
-  },
-  mounted () {
-    this.ready = true
   }
 }
 </script>

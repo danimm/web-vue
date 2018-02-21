@@ -1,7 +1,7 @@
 import Home from '@/components/Home.vue'
 import About from '@/components/About.vue'
 import Description from '@/components/Description.vue'
-import Portfolio from '@/components/Portfolio.vue'
+import Portfolio from '@/components/portfolio/Portfolio.vue'
 import Skills from '@/components/Skills.vue'
 
 const routes = [
