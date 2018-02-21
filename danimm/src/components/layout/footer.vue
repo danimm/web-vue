@@ -56,12 +56,12 @@ export default {
   }
   .img-containerSp {
     position: absolute;
-    left: 102px;
+    left: 107px;
     top: 7px;
   }
   .img-containerEn {
     position: absolute;
-    left: 142px;
+    left: 147px;
     top: 7px;
   }
   .flag {
